@@ -1,5 +1,6 @@
 # DeepSORT-Multi-Object-Tracking-using-YOLOv5
-This repository contains the project files containing our approach towards solving the problem statement of IEEE Signal Processing Cup 2020
+This repository contains the task of vehicle tracking from fisheye image using deepSORT algorithm where detector is used called yolov5. Vehicle entering the junction until leaving it will be tracker with smoothed contrail and a unique ID. Contrail is smoothed using exponential mean average over the real output. Yolov5 model is trained to output detection as a part of the tracker. A pretrained siamese network was used which was trained on NVIDIA AI City Challenge for car feature extraction. Anyone can train a siamese network for vehicle to achieve better result than this.
+
 # Getting Started
 1. Clone this repository
 2. Install dependencies
@@ -12,9 +13,10 @@ This repository contains the project files containing our approach towards solvi
 Extra : If you want to download pretrained weight for day video for car tracker then download it from this [link](https://drive.google.com/file/d/10BPsqmc4VkmhGZWuInwtiAvDDbnIF6u0/view?usp=sharing) 
 
 # Sample Output 
-![](3wvqgp.gif)
+![](deepsort.gif)
 
 # Reference :
 * https://github.com/nwojke/deep_sort
 * Necessary blog : https://nanonets.com/blog/object-tracking-deepsort/
 * Paper of DeepSORT : https://arxiv.org/pdf/1703.07402.pdf
+* YoloV5 : https://github.com/ultralytics/yolov5
